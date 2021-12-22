@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 class='text-center'>
+        Formulir Data Vaksinasi Mahasiswa ITS
+    </h1>
+    <div class="container">
+        <form name="form" onsubmit="return validate()">
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" name="nama" placeholder="Nama Lengkap" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>NRP</label>
+                <input type="text" name="nrp" placeholder="NRP Mahasiswa" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email" class="form-control">
+                </small>
+            </div>
+            <div class="form-group">
+                <label>Fakultas</label>
+                <select name="fakultas" class="form-control">
+                    <option value="0">Pilih Fakultas</option>
+                    <option value="1">SCIENTICS</option>
+                    <option value="2">MARTECH</option>
+                    <option value="3">INDSYS</option>
+                    <option value="4">ELECTICS</option>
+                    <option value="5">CIVPLAN</option>
+                    <option value="6">CREABIZ</option>
+                    <option value="7">VOCATIONS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Status Vaksinasi</label>
+                <select name="vaksin" class="form-control">
+                    <option value="0">Pilih Status Vaksin</option>
+                    <option value="1">Sudah Vaksin</option>
+                    <option value="2">Belum Vaksin</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div> 
+</body>
+</html>
